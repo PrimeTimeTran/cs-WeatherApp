@@ -122,6 +122,7 @@ class App extends React.Component {
                 {weatherDescription}
               </h2>
               <p className="col-12 author">
+                Made with 
                 <span role="img" aria-labelledby="heart">
                   ❤️️️️
                 </span>
