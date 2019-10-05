@@ -1,7 +1,7 @@
-import React from 'react'
 import { Spinner } from "react-bootstrap";
+import React from "react";
 
-export default function Spinner() {
+function WeatherSpinner() {
   return (
     <Spinner
       size="lg"
@@ -17,3 +17,5 @@ export default function Spinner() {
     />
   );
 }
+
+export default WeatherSpinner;
