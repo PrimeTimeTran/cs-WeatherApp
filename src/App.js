@@ -1,7 +1,7 @@
 import React from "react";
-import { Spinner } from "react-bootstrap";
 
 import Nav from "./components/Nav";
+import Spinner from "./components/Spinner";
 
 import "./App.css";
 import { cities, unsplash } from "./utils";
@@ -89,22 +89,7 @@ class App extends React.Component {
     });
   }
 
-  renderSpinner() {
-    return (
-      <Spinner
-        size="lg"
-        variant="info"
-        animation="border"
-        style={{
-          width: 200,
-          height: 200,
-          color: "#37FF8B",
-          marginTop: "40vh",
-          marginLeft: "45vw"
-        }}
-      />
-    );
-  }
+  
 
   render() {
     const {
@@ -118,7 +103,7 @@ class App extends React.Component {
     const temperatureC = (temperature - 273.15).toFixed(2);
     const temperatureF = (((temperature - 273.15) * 9) / 5 + 32).toFixed(2);
 
-    if (isLoading) return this.renderSpinner();
+    if (isLoading) return <Spinner />;
 
     return (
       <div
