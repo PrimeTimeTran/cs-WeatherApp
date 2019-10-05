@@ -43,7 +43,7 @@ class App extends React.Component {
 
   getWeather = (latitude, longitude) => {
     const API_KEY = "3de6162d3745365b168ade2bbe4e1d66";
-    const api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
+    const api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
     console.log("fetching");
     fetch(api)
       .then(response => {
